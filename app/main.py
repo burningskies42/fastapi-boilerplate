@@ -8,7 +8,6 @@ from app.routers import accordion, twoforms, unsplash
 from .library.helpers import open_file
 
 app = FastAPI()
-app.include_router(unsplash.router)
 
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
