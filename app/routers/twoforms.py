@@ -28,5 +28,5 @@ def form_post2(request: Request, number: int = Form(...)):
     result = number + 100
     return templates.TemplateResponse(
         "twoforms.html",
-        context={"requst": request, "result": result, "yournum": number},
+        context={"request": request, "result": result, "yournum": number},
     )
